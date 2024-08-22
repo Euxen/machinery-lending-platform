@@ -140,14 +140,14 @@ const Modal: React.FunctionComponent<ModalProps> = ({
                 border-0
                 hover:opacity-70
                 transition
-                absolute
-                left-9
+                relative
+                ml-4
                 "
                 >
                   <IoMdClose size={18} />
                 </button>
 
-                <div className="text-lg font-semibold">{title}</div>
+                <div className="text-lg font-semibold ml-4">{title}</div>
 
                 {/*body*/}
                 <div className="relative p-6 flex-auto">{body}</div>

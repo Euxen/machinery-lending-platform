@@ -5,7 +5,7 @@ import { BiSearch } from "react-icons/bi";
 const Search = () => {
   return (
     <div
-      className="
+      className={`
         border-[1px]
         w-full
         md:w-auto
@@ -15,7 +15,7 @@ const Search = () => {
         hover:shadow-md
         transition
         cursor-pointer
-        "
+        `}
     >
       <div
         className="

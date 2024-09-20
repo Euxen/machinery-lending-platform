@@ -20,7 +20,7 @@ export default async function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const currentUser = await getCurrentUser();
+  const currentUserQuery = await getCurrentUser();
 
   return (
     <html lang="en">
@@ -29,7 +29,7 @@ export default async function RootLayout({
           <ToasterProvider />
           <LoginModal />
           <RegisterModal />
-          <Navbar currentUser={currentUser} />
+          <Navbar currentUser={currentUserQuery} />
         </ClientOnly>
         {children}
       </body>
